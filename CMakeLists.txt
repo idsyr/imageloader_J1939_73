@@ -1,0 +1,6 @@
+set(PROJECT_N imageloader_J1939_73)
+project(${PROJECT_N})
+set(SRC main.c can_linux.c ../libs/src/J73.c)
+include_directories(../libs/inc)
+include_directories(inc)
+add_executable(${PROJECT_N} ${SRC})
